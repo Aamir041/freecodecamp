@@ -1,14 +1,86 @@
 :root{
     font-family: 'Roboto Serif', sans-serif;
     font-size: 16px;
+    color: white;
 }
 
 body{
     margin: 0;
     padding: 0;
+    background-color: rgba(3, 3, 70,0.7);
 }
-.title{
+#title{
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+}
+
+#description{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.formDiv{
+    display: flex;
+    background-color: rgba(3, 3, 70,0.8);
+    justify-content: center;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    border-radius: 10px;
+}
+
+#survey-form{
+    font-size: 1.2rem;
+    display: flex;
+    margin-bottom: 1.3rem;
+    flex-direction: column;
+}
+
+.formInput{
+    width: 15rem;
+    height: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.formLabel{
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.clue{
+    font-size: 1rem;
+}
+
+.radioDiv{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.inputRadio,
+.inputCheckbox{
+    margin-bottom: 1rem;
+
+}
+.checkboxOption{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    font-size: 1rem;
+    height: 10rem;
+}
+
+.submitBttn{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: green;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem; 
 }

@@ -14,6 +14,73 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class = "title">FREE CODE CAMP</h1>
+    <h1 id = "title">freeCodeCamp Survey Form</h1>
+    <p id = "description"> Thank you for taking the time to help us improve the platform </p>
+    <div  class= "formDiv">
+
+        <form  id="survey-form">
+            <label class="formLabel" for="name">Name</label>
+            <input class ="formInput" type="text" id="name" placeholder="Enter your name">
+
+            <label class="formLabel" for="email">Email</label>
+            <input class ="formInput" type="email" id="email" placeholder="Enter your email">
+
+            <label class="formLabel" for="number">Age
+                <span class="clue">(optional)</span>
+            </label>
+            <input class ="formInput" type="number" id="number" placeholder="Enter your age" min="10" max="99">
+
+            <p class="formLabel">Which option best describes your current role?</p>
+            <select id="dropdown" class = "formInput" name="role">
+                <option  disabled ="" selected="" value="">Select current role</option>
+                <option value="">Student</option>
+                <option value="">Full Time Job</option>
+                <option value="">Full Time Learner</option>
+                <option value="">Prefer not to say</option>
+                <option value="">Other</option>
+            </select>
+
+            
+            <p class="formLabel">Would you recommend freeCodeCamp to a friend?</p>
+            <div class="radioDiv" id="radioDiv1">
+                <label>
+                    <input class="inputRadio" type="radio" name="user-recommend"  value="definitely">
+                    Definitely
+                </label>
+    
+                <label>
+                    <input class="inputRadio" type="radio" name="user-recommend"  value="maybe">
+                    Maybe
+                </label>
+    
+                <label>
+                    <input class="inputRadio" type="radio" name="user-recommend"  value="not-sure">
+                    Not sure
+                </label>
+            </div>
+
+            <label class="formLabel" for="checkboxOpt">What would you like to see improved? <span class="clue">(Check all that apply)</span></label>
+
+            <div id="checkboxOpt" class="checkboxOption">
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="inputCheckbox">
+                    Front-end Projects
+                </label>
+                <label><input name="prefer" value="back-end-projects" type="checkbox" class="inputCheckbox">
+                    Back-end Projects
+                </label>
+                <label><input name="prefer" value="data-visualization" type="checkbox" class="inputCheckbox">
+                    Data Visualization
+                </label>
+            </div>
+
+            <label class="formLabel" for="yourComment">Any comments or suggestions?</label>
+            <textarea class = "comment" name="comment" id="yourComment" placeholder="Enter your comment here"></textarea>
+
+            <input class="submitBttn" type="submit" name="" id="submit" value="Submit">
+        </form>
+    </div>
+
+    
+
 </body>
 </html>
