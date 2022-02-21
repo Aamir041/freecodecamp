@@ -32,23 +32,36 @@ body{
 }
 
 figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     margin-left:0;
     margin-right: 0;
 }
 
 #img-div img{
-    height: 50%;
-    width: 50%;
+    height: auto;
+    margin: 0 auto;
     margin-top: 1rem;
 }
 
 #img-caption{
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: hsl(12, 100%, 50%);
     font-style: italic;
     text-decoration: underline;
+}
+
+#image{
+    display: block;
+      
+    max-width: 100%;
     
+    margin-left: auto;
+    
+    margin-right: auto;
 }
 
 #contentHead{
@@ -62,10 +75,11 @@ figure{
 .content{
     text-align: left;
     margin-top: 0.7rem;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 #tribute-link{
     margin: 0;
     padding: 0;
-    margin-bottom: 2rem;
 }
