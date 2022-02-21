@@ -20,15 +20,15 @@
 
         <form  id="survey-form">
             <label class="formLabel" id = "name-label" for="name">Name</label>
-            <input class ="formInput" type="text" id="name" placeholder="Enter your name">
+            <input class ="formInput" type="text" id="name" placeholder="Enter your name" name = "name" required>
 
             <label class="formLabel" id = "email-label" for="email">Email</label>
-            <input class ="formInput" type="email" id="email" placeholder="Enter your email">
+            <input class ="formInput" type="email" id="email" placeholder="Enter your email" required>
 
             <label class="formLabel" id = "number-label" for="number">Age
                 <span class="clue">(optional)</span>
             </label>
-            <input class ="formInput" type="number" id="number" placeholder="Enter your age" min="10" max="99">
+            <input class ="formInput" type="number" id="number" name = "number" placeholder="Enter your age" min="10" max="99">
 
             <p class="formLabel">Which option best describes your current role?</p>
             <select id="dropdown" class = "formInput" name="role">
