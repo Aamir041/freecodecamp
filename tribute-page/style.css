@@ -48,8 +48,8 @@ figure{
 }
 
 #img-caption{
-    font-size: 2rem;
-    color: hsl(12, 100%, 50%);
+    font-size: 1.3rem;
+    color: grey;
     font-style: italic;
     text-decoration: underline;
 }
